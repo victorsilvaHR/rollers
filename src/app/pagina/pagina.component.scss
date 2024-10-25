@@ -4,57 +4,157 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-  
-    .header-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-  
-    /* Contenedor del header */
-    .header-content {
-      position: relative;
-      z-index: 1;
-      padding-top: 2rem;
-    }
-  }
-  
-  /* Navbar personalizado */
-  .navbar-custom {
-    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.header-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Contenedor del header */
+.header-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem;
+
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: rgba(211, 208, 208, 0.8); /* Cambia el último valor para ajustar la opacidad (0.0 a 1.0) */
     padding: 1rem 2rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     transition: background-color 0.3s ease;
-  
-    .navbar-brand .navbar-caption-wrap .navbar-caption {
-      color: #333;
+
+}
+/* Quita el borde gris y fondo del botón del navbar */
+.navbar-toggler {
+    border: none; /* Quita el borde */
+    background: transparent; /* Asegura que el fondo sea transparente */
+}
+
+/* Quita el borde de las imágenes dentro del botón */
+.navbar-toggler img {
+    border: none; /* Quita el borde de las imágenes */
+    display: block; /* Asegúrate de que las imágenes sean bloques */
+    height: 2rem; /* Asegura que la altura se mantenga */
+}
+
+/* Para mayor control, si quieres que los íconos se comporten como bloques */
+.navbar-toggler img {
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: 2rem; /* Ajusta la altura */
+    margin: 0; /* Asegúrate de que no haya margen */
+}
+
+
+
+/* Estilos para los elementos del navbar */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-caption-wrap {
+    margin-left: 1em;
+}
+
+.navbar-caption {
+    font-weight: bold;
+    font-size: 3rem; /* Tamaño por defecto */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+
+    .nav-item {
+        margin: 0 15px;
     }
-  
-    /* Botón personalizado */
-    .btn-custom {
-      background-color: #007bff;
-      border-radius: 20px;
-      padding: 0.5rem 1rem;
-      font-weight: bold;
+}
+
+/* Botón de cerrar */
+.close-toggler {
+    display: none; /* Oculto por defecto */
+    font-size: 2rem; /* Tamaño del icono de cerrar */
+    background: transparent;
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+    cursor: pointer;
+}
+
+/* Botón personalizado */
+.navbar-buttons {
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+}
+
+.btn-custom {
+    background-color: #007bff;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.menu-icon {
+    margin-left: 1rem; /* Espaciado a la izquierda */
+    display: flex;
+    align-items: center; /* Centrar verticalmente si es necesario */
+}
+
+.menu-icon img {
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: 2rem; /* Ajusta la altura */
+}
+
+.close-toggler {
+    margin-left: 1rem; /* Espacio a la izquierda para separar del ícono de hamburguesa */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Responsivo */
+/* Responsivo para dispositivos móviles */
+@media (max-width: 800px) {
+    .navbar-caption {
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
     }
-    .navbar-caption-wrap {
-        margin-left: 2em;
-        font-weight: 2em;
-      
-        .navbar-caption {
-          color: #333; // Ajusta el color del texto si es necesario
-          font-weight: bold;
-          font-size: 3rem; // Ajusta el tamaño del texto si deseas
-        }
-      }
-      
-  }
-  
-  
-  
-  
+
+    .nav-link {
+        font-size: 1rem; /* Asegúrate de que las letras en el navbar también se vean bien */
+    }
+
+    .navbar-custom {
+        padding: 0.75rem 1rem; /* Ajusta el padding para un mejor espacio */
+    }
+
+    .close-toggler {
+        display: inline-block; /* Muestra el botón de cerrar en el modo responsivo */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Cambia a una columna para que se vea mejor en móviles */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    .navbar-brand {
+        flex-direction: row; /* Asegúrate de que el logo y el texto estén alineados horizontalmente */
+    }
+
+    .navbar-buttons {
+        margin-top: 10px; /* Espacio entre el menú y el botón */
+        width: 100%; /* Asegura que el botón ocupe todo el ancho */
+        text-align: center; /* Centra el botón en el navbar */
+    }
+    .navbar-caption-line {
+        display: block; /* Asegura que cada línea se muestre en su propia línea */
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente como desees */
+        text-align: center; /* Centra el texto si es necesario */
+    }
+}
+
