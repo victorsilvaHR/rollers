@@ -1,0 +1,24 @@
+.unete {
+    // height: 15rem;
+    padding: 2rem 0;
+    background-color: purple;
+    color: #fa45d8;
+    text-shadow: black 2px 4px 6px;
+    box-shadow: #fa45d8 0px 0px 6px 3px;
+}
+.main-title {
+    font-size: 4rem;
+}
+.subtitle {
+    font-size: 2rem;
+}
+.btn-inscribete {
+    color: purple;
+    background-color: white;
+    border-radius: 50px;
+    padding: 0.7rem;
+
+    &:hover {
+        box-shadow: #fa45d8 2px 4px 6px;
+    }
+}
