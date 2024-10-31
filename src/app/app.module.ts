@@ -7,6 +7,7 @@ import { PaginaComponent } from './pagina/pagina.component';
 import { FooterComponent } from './footer/footer.component';
 import { PreguntasFComponent } from './preguntas-f/preguntas-f.component';
 import { UneteComponent } from './unete/unete.component';
+import { NuestraPComponent } from './nuestra-p/nuestra-p.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UneteComponent } from './unete/unete.component';
     PaginaComponent,
     FooterComponent,
     PreguntasFComponent,
-    UneteComponent
+    UneteComponent,
+    NuestraPComponent
   ],
   imports: [
     BrowserModule,
