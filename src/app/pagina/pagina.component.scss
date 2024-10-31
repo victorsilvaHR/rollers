@@ -1,4 +1,3 @@
-/* Header y fondo de pantalla completo */
 .header {
     position: relative;
     width: 100%;
@@ -16,154 +15,126 @@
     z-index: -1;
 }
 
-/* Contenedor del header */
 .header-content {
     position: relative;
     z-index: 1;
     padding-top: 2rem;
-
 }
+
 .img-header {
     height: 3.5rem;
     border-radius: 50px;
 }
-/* Navbar personalizada */
+
 .navbar-custom {
-    background-color: rgba(211, 208, 208, 0.8); /* Cambia el último valor para ajustar la opacidad (0.0 a 1.0) */
+    background-color: rgba(211, 208, 208, 0.8);
     padding: 1rem 2rem;
     border-radius: 50px;
     transition: background-color 0.3s ease;
-
 }
-/* Quita el borde gris y fondo del botón del navbar */
+
 .navbar-toggler {
-    border: none; /* Quita el borde */
-    background: transparent; /* Asegura que el fondo sea transparente */
+    border: none;
+    background: transparent;
 }
 
-/* Quita el borde de las imágenes dentro del botón */
 .navbar-toggler img {
-    border: none; /* Quita el borde de las imágenes */
-    display: block; /* Asegúrate de que las imágenes sean bloques */
-    height: 2rem; /* Asegura que la altura se mantenga */
+    display: block;
+    height: 2rem;
 }
 
-/* Para mayor control, si quieres que los íconos se comporten como bloques */
-.navbar-toggler img {
-    width: auto; /* Mantiene la proporción de la imagen */
-    height: 2rem; /* Ajusta la altura */
-    margin: 0; /* Asegúrate de que no haya margen */
-}
-
-
-
-/* Estilos para los elementos del navbar */
 .navbar-brand {
     display: flex;
     align-items: center;
 }
 
-.navbar-caption-wrap {
-    margin-left: 1em;
-}
-
-.navbar-caption {
-    font-weight: bold;
-    font-size: 3rem; /* Tamaño por defecto */
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    margin: 0;
-
-    .nav-item {
-        margin: 0 15px;
-    }
-}
-
-/* Botón de cerrar */
-.close-toggler {
-    display: none; /* Oculto por defecto */
-    font-size: 2rem; /* Tamaño del icono de cerrar */
-    background: transparent;
-    margin-left: auto; /* Empuja el botón hacia la derecha */
-    cursor: pointer;
-}
-
-/* Botón personalizado */
-.navbar-buttons {
-    margin-left: auto; /* Empuja el botón hacia la derecha */
-}
-
-.btn-custom {
-    background-color: #007bff;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-}
-
-.menu-icon {
-    margin-left: 1rem; /* Espaciado a la izquierda */
-    display: flex;
-    align-items: center; /* Centrar verticalmente si es necesario */
-}
-
-.menu-icon img {
-    width: auto; /* Mantiene la proporción de la imagen */
-    height: 2rem; /* Ajusta la altura */
-}
-
-.close-toggler {
-    margin-left: 1rem; /* Espacio a la izquierda para separar del ícono de hamburguesa */
-    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
-}
 .navbar-title {
     font-size: 2rem;
     text-decoration: none;
 }
+
 .navbar-text {
+    color: blueviolet;
+    text-shadow: rgb(89, 89, 89) 2px 3px 4px;
+}
+
+.mbr-section-title {
+    text-align: center;
+}
+
+.grid-container {
+    overflow: hidden;
+}
+
+.grid-container-3 {
+    display: flex;
+    flex-wrap: nowrap; /* Mantiene las imágenes en línea horizontal */
+    transition: transform 0.3s ease;
+}
+
+.grid-item {
+    flex: 1; /* Las imágenes ocuparán el mismo espacio */
+    margin: 0 5px; /* Espaciado entre imágenes */
+}
+
+.grid-item img {
+    border-radius: 20px; /* Redondea las esquinas de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    margin-bottom: 3em; /* Espacio debajo de cada imagen */
+    width: 100%; /* Mantiene el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+}
+.titulo {
     color: blueviolet;
     text-shadow: rgb(89, 89, 89) 2px 3px 4px;
 }
 
 /* Responsivo para dispositivos móviles */
 @media (max-width: 800px) {
-    .navbar-caption {
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    .navbar-title {
+        font-size: 1.5rem;
     }
 
     .nav-link {
-        font-size: 1rem; /* Asegúrate de que las letras en el navbar también se vean bien */
+        font-size: 1rem;
     }
 
     .navbar-custom {
-        padding: 0.75rem 1rem; /* Ajusta el padding para un mejor espacio */
-    }
-
-    .close-toggler {
-        display: inline-block; /* Muestra el botón de cerrar en el modo responsivo */
+        padding: 0.75rem 1rem;
     }
 
     .navbar-nav {
-        flex-direction: column; /* Cambia a una columna para que se vea mejor en móviles */
-        align-items: flex-start; /* Alinea los elementos a la izquierda */
-    }
-
-    .navbar-brand {
-        flex-direction: row; /* Asegúrate de que el logo y el texto estén alineados horizontalmente */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .navbar-buttons {
-        margin-top: 10px; /* Espacio entre el menú y el botón */
-        width: 100%; /* Asegura que el botón ocupe todo el ancho */
-        text-align: center; /* Centra el botón en el navbar */
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
-    .navbar-caption-line {
-        display: block; /* Asegura que cada línea se muestre en su propia línea */
-        font-size: 1.5rem; /* Ajusta el tamaño de la fuente como desees */
-        text-align: center; /* Centra el texto si es necesario */
+
+    .grid-container-3 {
+        flex-direction: row; /* Mantiene las imágenes en línea horizontal en móviles */
     }
+   
+.cid-us8K83F4bv {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #ffffff;
+    border-radius: 40px;
 }
 
+.grid-item {
+    margin: 1em; /* Espacio entre las imágenes */
+    flex: 0 0 calc(50% - 2em); /* Ajusta el tamaño de los items */
+    /* Cambia el valor a '33.33%' si deseas 3 columnas */
+}
+
+.grid-item img {
+    border-radius: 20px; /* Redondea las esquinas de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    width: 100%; /* Mantiene el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto original */
+}
+}
