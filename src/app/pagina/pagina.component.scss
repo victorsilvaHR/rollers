@@ -29,8 +29,7 @@
 }
 /* Navbar personalizada */
 .navbar-custom {
-    background-color: rgba(211, 208, 208, 0.8); /* Cambia el último valor para ajustar la opacidad (0.0 a 1.0) */
-    padding: 1rem 2rem;
+    background-color: rgba(211, 208, 208, 0.8); 
     border-radius: 50px;
     transition: background-color 0.3s ease;
 
@@ -54,7 +53,12 @@
     height: 2rem; /* Ajusta la altura */
     margin: 0; /* Asegúrate de que no haya margen */
 }
-
+.margin-r {
+    margin-right: 1rem;
+}
+.margin-l {
+    margin-left: 1rem;
+}
 
 
 /* Estilos para los elementos del navbar */
@@ -67,11 +71,6 @@
     margin-left: 1em;
 }
 
-.navbar-caption {
-    font-weight: bold;
-    font-size: 3rem; /* Tamaño por defecto */
-}
-
 .navbar-nav {
     display: flex;
     justify-content: center;
@@ -80,6 +79,7 @@
 
     .nav-item {
         margin: 0 15px;
+        font-size: 1.2rem;
     }
 }
 
@@ -98,10 +98,16 @@
 }
 
 .btn-custom {
-    background-color: #007bff;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
     border-radius: 20px;
     padding: 0.5rem 1rem;
     font-weight: bold;
+    &:hover {
+        background-color: rgb(151, 61, 236);
+        box-shadow: gray 2px 2px 5px;
+    }
 }
 
 .menu-icon {
