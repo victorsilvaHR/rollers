@@ -3,24 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginaComponent } from './pagina/pagina.component';
+import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PreguntasFComponent } from './preguntas-f/preguntas-f.component';
 import { UneteComponent } from './unete/unete.component';
 import { NuestraPComponent } from './nuestra-p/nuestra-p.component';
+import { CintaTComponent } from './cinta-t/cinta-t.component';
+import { NgxFastMarqueeModule } from 'ngx-fast-marquee';
+import { PatinaEstiloComponent } from './patina-estilo/patina-estilo.component';
+import { CarruselComponent } from './carrusel/carrusel.component';
+import { ProveedoresComponent } from './proveedores/proveedores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaComponent,
+    HeaderComponent,
     FooterComponent,
     PreguntasFComponent,
     UneteComponent,
-    NuestraPComponent
+    NuestraPComponent,
+    CintaTComponent,
+    PatinaEstiloComponent,
+    CarruselComponent,
+    ProveedoresComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxFastMarqueeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,15 +1,14 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
-  selector: 'app-pagina',
-  templateUrl: './pagina.component.html',
-  styleUrls: ['./pagina.component.scss']
+  selector: 'app-carrusel',
+  templateUrl: './carrusel.component.html',
+  styleUrls: ['./carrusel.component.scss']
 })
-export class PaginaComponent implements OnInit {
-
-  isNavbarVisible: boolean = false;
+export class CarruselComponent implements OnInit {
 
   constructor(private renderer: Renderer2) { }
+
   ngOnInit(): void {
     this.renderer.listen('window', 'scroll', () => {
       const gallery = document.querySelector('.grid-container-3') as HTMLElement;
@@ -18,10 +17,6 @@ export class PaginaComponent implements OnInit {
         gallery.style.transform = `translateX(${scrollY * 0.3 - 330}px)`; // -200 px para iniciar más a la izquierda
       }
     });
-  }
-
-  toggleNavbar(): void {
-    this.isNavbarVisible = !this.isNavbarVisible;
   }
 
 }

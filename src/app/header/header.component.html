@@ -1,0 +1,32 @@
+<header class="header">
+    <div class="header-content container">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="navbar-brand margin-l">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="assets/casco1.jpg" alt="Logo" class ="img-header">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap">
+                    <a class="navbar-title navbar-text" href="#">
+                        Guerreros Rollers
+                    </a>
+                </span>
+            </div>
+            <div class="navbar-toggler" (click)="toggleNavbar()" aria-expanded="isNavbarVisible" aria-label="Toggle navigation">
+                <img src="assets/menu.png" alt="Menú" *ngIf="!isNavbarVisible" style="height: 2rem;">
+                <img src="assets/cerrar.png" alt="Cerrar" *ngIf="isNavbarVisible" style="height: 2rem;">
+            </div>            
+            <div class="collapse navbar-collapse margin-r" [ngClass]="{'show': isNavbarVisible}" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto nav-dropdown">
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#nuestra-p">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#faqs">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#">Siguenos</a></li>
+                </ul>
+                <div class="navbar-buttons">
+                    <a class="btn btn-custom" href='https://api.whatsapp.com/send?phone=+527224616208&text=Me+puede+dar+informes+sobre+las+clases+de+patinaje.' target="_blank">Únete Ahora</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

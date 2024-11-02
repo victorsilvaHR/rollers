@@ -1,0 +1,69 @@
+.grid-container {
+    overflow: hidden;
+}
+
+.grid-container-3 {
+    display: flex;
+    flex-wrap: nowrap; /* Mantiene las imágenes en línea horizontal */
+    transition: transform 0.3s ease;
+}
+
+.grid-item {
+    flex: 1; /* Las imágenes ocuparán el mismo espacio */
+    margin: 0 15px; /* Espaciado entre imágenes */
+}
+.mbr-section-title {
+    text-align: center;
+}
+.grid-item img {
+    border-radius: 20px; /* Redondea las esquinas de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    margin-bottom: 3em; /* Espacio debajo de cada imagen */
+    width: 20vw; /* Mantiene el ancho al 100% del contenedor */
+    height: 85%; /* Mantiene la relación de aspecto original */
+}
+@media (max-width: 800px) {
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar-custom {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-buttons {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-container-3 {
+        flex-direction: row; /* Mantiene las imágenes en línea horizontal en móviles */
+    }
+   
+.cid-us8K83F4bv {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #ffffff;
+    border-radius: 40px;
+}
+
+.grid-item {
+    margin: 0.6em; /* Espacio entre las imágenes */
+    flex: 0 0 calc(50% - 2em); /* Ajusta el tamaño de los items */
+    /* Cambia el valor a '33.33%' si deseas 3 columnas */
+}
+
+.grid-item img {
+    border-radius: 20px; /* Redondea las esquinas de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+    width: 100%; /* Mantiene el ancho al 100% del contenedor */
+    height: 83%; /* Mantiene la relación de aspecto original */
+}
+}

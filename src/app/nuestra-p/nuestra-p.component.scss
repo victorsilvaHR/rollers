@@ -1,8 +1,7 @@
 .back-color {
-    // background-color: whitesmoke;
     background-color: blueviolet;
     border-radius: 50px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: white;
 }
 .amz-img {
@@ -14,4 +13,14 @@
 }
 .text-pharagraph {
     font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+    .back-color {
+        border-radius: 0px;
+        margin-bottom: 0rem;
+    }
+    .amz-img {
+        width: 96%;
+        margin: 10px auto;
+    }
 }

@@ -1,0 +1,26 @@
+.espaciador {
+    height: 7rem;
+}
+.custom-back {
+    height: 38rem;
+    background-image: url(../../assets/fondo.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-shadow: gray 2px 3px 8px;
+}
+.patina-estilo-title {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.patina-estilo-subtitle {
+    font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+    // .custom-back {
+    //     color: whitesmoke;
+    //     text-shadow: gray 2px 3px 8px;
+    // }
+}
