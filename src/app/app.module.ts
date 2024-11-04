@@ -13,6 +13,7 @@ import { NgxFastMarqueeModule } from 'ngx-fast-marquee';
 import { PatinaEstiloComponent } from './patina-estilo/patina-estilo.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
+import { GruposComponent } from './grupos/grupos.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProveedoresComponent } from './proveedores/proveedores.component';
     CintaTComponent,
     PatinaEstiloComponent,
     CarruselComponent,
-    ProveedoresComponent
+    ProveedoresComponent,
+    GruposComponent
   ],
   imports: [
     BrowserModule,
