@@ -1,9 +1,10 @@
 .partners-section {
+    opacity: 0.9;
     background-color: #f0f0f0;
 }
 
 .section-header {
-    margin-bottom: 2rem; 
+    margin: 2rem auto;
 }
 
 .section-title {
@@ -40,7 +41,12 @@
 .partner-image-wrapper:hover {
     transform: scale(1.05);
 }
-
+.p1 {
+    padding: 1rem;
+}
+.texto-provedores {
+    font-size: 1.3rem;
+}
 @media (max-width: 768px) {
     .partner-item {
         margin-bottom: 1rem; 

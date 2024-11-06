@@ -22,6 +22,12 @@
     width: 20vw; /* Mantiene el ancho al 100% del contenedor */
     height: 85%; /* Mantiene la relación de aspecto original */
 }
+.content-head{
+    margin-top: 1.5rem;
+}
+.titulo {
+    color: #fa45d8;
+}
 @media (max-width: 800px) {
 
     .nav-link {
