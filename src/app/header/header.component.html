@@ -19,9 +19,9 @@
             </div>            
             <div class="collapse navbar-collapse margin-r" [ngClass]="{'show': isNavbarVisible}" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto nav-dropdown">
-                    <li class="nav-item"><a class="nav-link navbar-text" href="#nuestra-p">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link navbar-text" href="#faqs">Preguntas</a></li>
-                    <li class="nav-item"><a class="nav-link navbar-text" href="#siguenos">Siguenos</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#nuestra-p" (click)="toggleNavbar()">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#faqs" (click)="toggleNavbar()">Preguntas</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-text" href="#siguenos" (click)="toggleNavbar()">Siguenos</a></li>
                 </ul>
                 <div class="navbar-buttons">
                     <a class="btn btn-custom" href='https://api.whatsapp.com/send?phone=+527224616208&text=Me+puede+dar+informes+sobre+las+clases+de+patinaje.' target="_blank">Únete Ahora</a>
