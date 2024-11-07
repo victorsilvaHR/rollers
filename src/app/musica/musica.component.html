@@ -1,0 +1,8 @@
+<div class="musica-container">    
+    <audio #audioPlayer src="assets/walk.mp3"  loop></audio>
+    <button (click)="toggleAudio()" class="audio-control-button">
+        <img *ngIf="!isPlaying"width="40" height="40" class="iconPlay" src="assets/play.png" alt="Play" />
+        <img *ngIf="isPlaying" width="40" height="40" class="iconPausa" src="assets/pausa.png" alt="Pausa" />
+      </button>
+  </div>
+  
