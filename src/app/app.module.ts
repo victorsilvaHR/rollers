@@ -15,6 +15,7 @@ import { CarruselComponent } from './carrusel/carrusel.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { GruposComponent } from './grupos/grupos.component';
 import { ImgGerreroComponent } from './img-gerrero/img-gerrero.component';
+import { MusicaComponent } from './musica/musica.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ImgGerreroComponent } from './img-gerrero/img-gerrero.component';
     CarruselComponent,
     ProveedoresComponent,
     GruposComponent,
-    ImgGerreroComponent
+    ImgGerreroComponent,
+    MusicaComponent
   ],
   imports: [
     BrowserModule,

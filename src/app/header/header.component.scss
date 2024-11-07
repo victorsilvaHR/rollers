@@ -89,10 +89,12 @@
     border-radius: 20px;
     padding: 0.5rem 1rem;
     font-weight: bold;
+    font-size: 15px;
     &:hover {
         background-color: rgb(151, 61, 236);
         box-shadow: gray 2px 2px 5px;
     }
+
 }
 
 .menu-icon {
@@ -117,13 +119,23 @@
 
 .navbar-text {
     color: blueviolet;
-    text-shadow: rgb(89, 89, 89) 2px 3px 4px;
+    text-shadow:#838080 1px 1px 4px;
 }
 
 .titulo {
     color: blueviolet;
     text-shadow: rgb(89, 89, 89) 2px 3px 4px;
 }
+.nova-flat-regular {
+    font-family: "Nova Flat", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .offside-regular {
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* Responsivo para dispositivos móviles */
 @media (max-width: 800px) {
