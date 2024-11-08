@@ -10,7 +10,7 @@
 }
 .titulo-card {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.1rem;
 }
 .imagen-grupo {
     max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
@@ -72,20 +72,6 @@
     font-weight: 800;
   }
   
-  // .card p:not(.heading) {
-  //   font-size: 20px;
-  //   color: #000000;
-  // }
-  
-  // .card p:not(::after) {
-  //   font-size: 0px;
-  //   color: #ffffff;
-  // }
-  
-  // .card p:last-child {
-  //   color: #ffffff;
-  // }
-  
   .card:hover::after {
     filter: blur(50px);
   }
@@ -129,6 +115,9 @@
   font-style: normal;
 }
 @media (max-width: 800px) {
+  .card:hover .text-card {
+    font-size: 1.4rem;
+}
   .titulo-card {
    margin-bottom: 2rem;
   }
@@ -152,7 +141,6 @@
   }
   .card:hover::before {
     transform: rotate(-90deg) scaleX(1.1) scaleY(0.94);
-    // margin: auto;
   }
  
 }

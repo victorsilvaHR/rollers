@@ -139,11 +139,14 @@
 
 /* Responsivo para dispositivos móviles */
 @media (max-width: 800px) {
+    .img-header {
+        height: 2.7rem;
+    }
     .header-content {
         padding-top: 0.7rem;
     }
     .navbar-title {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
     }
 
     .nav-link {
@@ -164,28 +167,30 @@
         width: 100%;
         text-align: center;
     }
-
+    .margin-l {
+        margin-left: 0px;
+    }
     .grid-container-3 {
         flex-direction: row; /* Mantiene las imágenes en línea horizontal en móviles */
     }
    
-.cid-us8K83F4bv {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    background-color: #ffffff;
-    border-radius: 40px;
-}
+    .cid-us8K83F4bv {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        background-color: #ffffff;
+        border-radius: 40px;
+    }
 
-.grid-item {
-    margin: 1em; /* Espacio entre las imágenes */
-    flex: 0 0 calc(50% - 2em); /* Ajusta el tamaño de los items */
-    /* Cambia el valor a '33.33%' si deseas 3 columnas */
-}
+    .grid-item {
+        margin: 1em; /* Espacio entre las imágenes */
+        flex: 0 0 calc(50% - 2em); /* Ajusta el tamaño de los items */
+        /* Cambia el valor a '33.33%' si deseas 3 columnas */
+    }
 
-.grid-item img {
-    border-radius: 20px; /* Redondea las esquinas de la imagen */
-    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
-    width: 100%; /* Mantiene el ancho al 100% del contenedor */
-    height: auto; /* Mantiene la relación de aspecto original */
-}
+    .grid-item img {
+        border-radius: 20px; /* Redondea las esquinas de la imagen */
+        object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+        width: 100%; /* Mantiene el ancho al 100% del contenedor */
+        height: auto; /* Mantiene la relación de aspecto original */
+    }
 }
